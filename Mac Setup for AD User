@@ -38,11 +38,7 @@ That's why it's more complicated.
 
 # What is a Mobile Account?
 
-Suppose your AD user is
-
-```
-nan.nani
-```
+Suppose your AD user is `nan.nani`
 
 Before login, that user **doesn't actually exist** on the Mac.
 
