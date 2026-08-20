@@ -1,8 +1,3 @@
-ysadminctl -adminUser itadmin -adminPassword - -secureTokenOn nan.nani -password - sudo defaults write /Library/Preferences/com.apple.loginwindow SHOWFULLNAME -bool YES sudo reboot now its working but i don't understand the above commands like whats mobile account and all
-
-😂 Welcome to the world of macOS Enterprise. You fixed it, but the commands probably looked like black magic. Let me explain **what actually happened**.
-
----
 
 # First understand how macOS thinks
 
@@ -40,8 +35,6 @@ macOS says
 > Are you allowed to unlock the Mac?"
 
 That's why it's more complicated.
-
----
 
 # What is a Mobile Account?
 
@@ -468,5 +461,3 @@ Desktop loaded
 ## Why this felt so different from Windows
 
 On Windows, domain login, profile creation, and desktop startup are tightly integrated. On macOS, Apple treats them as separate pieces: **directory authentication**, **local mobile account**, **Secure Token**, and **the graphical login session**. That's why you can have a situation where `su` succeeds but the graphical login still fails.
-
-Now that you've been through this, you've actually debugged one of the more common enterprise macOS issues. It's a good example of how macOS integrates with Active Directory while still following Apple's own account and security model.
